@@ -14,7 +14,8 @@ New features:
 
 Bug fixes:
 
-- *add item here*
+- make datetime related vocabularies work with GS.
+  [iham]
 
 
 3.0 (2016-06-12)

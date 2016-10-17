@@ -80,7 +80,7 @@ def WeekdaysFactory(context):
     items = []
     for idx in range(len(WEEKDAY_PREFIXES)):
         msgstr = PLMF('weekday_{0}'.format(WEEKDAY_PREFIXES[idx]))
-        items.append(SimpleTerm(idx, str(idx), msgstr))
+        items.append(SimpleTerm(value=str(idx), title=msgstr))
     return SimpleVocabulary(items)
 
 
@@ -101,7 +101,7 @@ def WeekdaysAbbrFactory(context):
     items = []
     for idx in range(len(WEEKDAY_PREFIXES)):
         msgstr = PLMF('weekday_{0}_abbr'.format(WEEKDAY_PREFIXES[idx]))
-        items.append(SimpleTerm(idx, str(idx), msgstr))
+        items.append(SimpleTerm(value=str(idx), title=msgstr))
     return SimpleVocabulary(items)
 
 
@@ -122,7 +122,7 @@ def WeekdaysShortFactory(context):
     items = []
     for idx in range(len(WEEKDAY_PREFIXES)):
         msgstr = PLMF('weekday_{0}_short'.format(WEEKDAY_PREFIXES[idx]))
-        items.append(SimpleTerm(idx, str(idx), msgstr))
+        items.append(SimpleTerm(value=str(idx), title=msgstr))
     return SimpleVocabulary(items)
 
 
@@ -147,7 +147,7 @@ def MonthFactory(context):
     items = []
     for idx in range(len(MONTH_PREFIXES)):
         msgstr = PLMF('month_{0}'.format(MONTH_PREFIXES[idx]))
-        items.append(SimpleTerm(idx, str(idx), msgstr))
+        items.append(SimpleTerm(value=str(idx), title=msgstr))
     return SimpleVocabulary(items)
 
 
@@ -168,5 +168,5 @@ def MonthAbbrFactory(context):
     items = []
     for idx in range(len(MONTH_PREFIXES)):
         msgstr = PLMF('month_{0}_abbr'.format(MONTH_PREFIXES[idx]))
-        items.append(SimpleTerm(idx, str(idx), msgstr))
+        items.append(SimpleTerm(value=str(idx), title=msgstr))
     return SimpleVocabulary(items)
